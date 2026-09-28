@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FoodieHub</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="header">
+
+    <nav class="navbar container">
+
+        <a href="#home" class="logo">
+            🍔 Foodie<span>Hub</span>
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#order">Order</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+
+            <button class="dark-btn" id="darkMode">
+                🌙
+            </button>
+
+            <button class="cart-btn" id="cartButton">
+                🛒 <span id="cartCount">0</span>
+            </button>
+
+            <button class="menu-toggle" id="menuToggle">
+                ☰
+            </button>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content container">
+
+        <div class="hero-text">
+
+            <span class="badge">
+                🔥 Fresh & Delicious
+            </span>
+
+            <h1>
+                Delicious Food
+                <span>At Your Door.</span>
+            </h1>
+
+            <p>
+                Order your favorite meals from FoodieHub.
+                Fresh ingredients, amazing taste and fast delivery.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#menu" class="btn primary-btn">
+                    Order Now 🍔
+                </a>
+
+                <a href="#menu" class="btn outline-btn">
+                    Explore Menu
+                </a>
+
+            </div>
+
+            <div class="hero-stats">
+
+                <div>
+                    <strong>30+</strong>
+                    <span>Food Items</span>
+                </div>
+
+                <div>
+                    <strong>15min</strong>
+                    <span>Delivery</span>
+                </div>
+
+                <div>
+                    <strong>4.9★</strong>
+                    <span>Rating</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-image">
+
+            <div class="hero-circle"></div>
+
+            <img
+                src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=900&q=80"
+                alt="Pizza"
+            >
+
+            <div class="floating-rating">
+                ⭐ 4.9
+                <small>Excellent Food</small>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= MENU ================= -->
+
+<section class="menu-section" id="menu">
+
+    <div class="section-title">
+
+        <span>OUR MENU</span>
+
+        <h2>Choose Your Favorite</h2>
+
+        <p>
+            Freshly prepared meals made especially for you.
+        </p>
+
+    </div>
+
+
+    <!-- SEARCH -->
+
+    <div class="search-container container">
+
+        <div class="search-box">
+
+            <span>🔍</span>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search food..."
+            >
+
+        </div>
+
+    </div>
+
+
+    <!-- FILTER -->
+
+    <div class="filters">
+
+        <button class="filter-btn active" data-category="all">
+            All
+        </button>
+
+        <button class="filter-btn" data-category="burger">
+            🍔 Burgers
+        </button>
+
+        <button class="filter-btn" data-category="pizza">
+            🍕 Pizza
+        </button>
+
+        <button class="filter-btn" data-category="drink">
+            🥤 Drinks
+        </button>
+
+        <button class="filter-btn" data-category="dessert">
+            🍰 Desserts
+        </button>
+
+    </div>
+
+
+    <!-- FOOD GRID -->
+
+    <div class="food-grid container" id="foodGrid">
+
+
+        <!-- PRODUCT 1 -->
+
+        <article
+            class="food-card"
+            data-category="burger"
+            data-name="Classic Beef Burger"
+        >
+
+            <div class="food-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80"
+                    alt="Classic Beef Burger"
+                >
+
+                <span class="food-tag">Popular</span>
+
+                <button
+                    class="wishlist"
+                    data-name="Classic Beef Burger"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="food-info">
+
+                <span class="category">Burger</span>
+
+                <h3>Classic Beef Burger</h3>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                    <span>4.9</span>
+                </div>
+
+                <p>
+                    Juicy beef, cheese, lettuce and special sauce.
+                </p>
+
+                <div class="food-bottom">
+
+                    <strong>Rs. 599</strong>
+
+                    <button
+                        class="add-btn"
+                        data-name="Classic Beef Burger"
+                        data-price="599"
+                    >
+                        + Add
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 2 -->
+
+        <article
+            class="food-card"
+            data-category="burger"
+            data-name="Crispy Chicken Burger"
+        >
+
+            <div class="food-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=700&q=80"
+                    alt="Chicken Burger"
+                >
+
+                <span class="food-tag">New</span>
+
+                <button
+                    class="wishlist"
+                    data-name="Crispy Chicken Burger"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="food-info">
+
+                <span class="category">Burger</span>
+
+                <h3>Crispy Chicken Burger</h3>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                    <span>4.8</span>
+                </div>
+
+                <p>
+                    Crispy chicken with fresh vegetables and creamy sauce.
+                </p>
+
+                <div class="food-bottom">
+
+                    <strong>Rs. 649</strong>
+
+                    <button
+                        class="add-btn"
+                        data-name="Crispy Chicken Burger"
+                        data-price="649"
+                    >
+                        + Add
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 3 -->
+
+        <article
+            class="food-card"
+            data-category="pizza"
+            data-name="Pepperoni Pizza"
+        >
+
+            <div class="food-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=700&q=80"
+                    alt="Pepperoni Pizza"
+                >
+
+                <span class="food-tag">Hot</span>
+
+                <button
+                    class="wishlist"
+                    data-name="Pepperoni Pizza"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="food-info">
+
+                <span class="category">Pizza</span>
+
+                <h3>Pepperoni Pizza</h3>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                    <span>4.9</span>
+                </div>
+
+                <p>
+                    Loaded with cheese, pepperoni and Italian herbs.
+                </p>
+
+                <div class="food-bottom">
+
+                    <strong>Rs. 1099</strong>
+
+                    <button
+                        class="add-btn"
+                        data-name="Pepperoni Pizza"
+                        data-price="1099"
+                    >
+                        + Add
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 4 -->
+
+        <article
+            class="food-card"
+            data-category="pizza"
+            data-name="Four Cheese Pizza"
+        >
+
+            <div class="food-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1566843972142-a7fcb70de55a?auto=format&fit=crop&w=700&q=80"
+                    alt="Cheese Pizza"
+                >
+
+                <button
+                    class="wishlist"
+                    data-name="Four Cheese Pizza"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="food-info">
+
+                <span class="category">Pizza</span>
+
+                <h3>Four Cheese Pizza</h3>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                    <span>4.7</span>
+                </div>
+
+                <p>
+                    Four delicious cheeses with Italian herbs.
+                </p>
+
+                <div class="food-bottom">
+
+                    <strong>Rs. 1199</strong>
+
+                    <button
+                        class="add-btn"
+                        data-name="Four Cheese Pizza"
+                        data-price="1199"
+                    >
+                        + Add
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 5 -->
+
+        <article
+            class="food-card"
+            data-category="drink"
+            data-name="Fresh Cola"
+        >
+
+            <div class="food-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1629203849820-fdd70d49c38e?auto=format&fit=crop&w=700&q=80"
+                    alt="Cola"
+                >
+
+                <button
+                    class="wishlist"
+                    data-name="Fresh Cola"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="food-info">
+
+                <span class="category">Drink</span>
+
+                <h3>Fresh Cola</h3>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐
+                    <span>4.6</span>
+                </div>
+
+                <p>
+                    Refreshing chilled cola served with ice.
+                </p>
+
+                <div class="food-bottom">
+
+                    <strong>Rs. 199</strong>
+
+                    <button
+                        class="add-btn"
+                        data-name="Fresh Cola"
+                        data-price="199"
+                    >
+                        + Add
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 6 -->
+
+        <article
+            class="food-card"
+            data-category="drink"
+            data-name="Chocolate Shake"
+        >
+
+            <div class="food-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=700&q=80"
+                    alt="Chocolate Shake"
+                >
+
+                <button
+                    class="wishlist"
+                    data-name="Chocolate Shake"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="food-info">
+
+                <span class="category">Drink</span>
+
+                <h3>Chocolate Shake</h3>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                    <span>4.9</span>
+                </div>
+
+                <p>
+                    Creamy chocolate milkshake with rich flavor.
+                </p>
+
+                <div class="food-bottom">
+
+                    <strong>Rs. 449</strong>
+
+                    <button
+                        class="add-btn"
+                        data-name="Chocolate Shake"
+                        data-price="449"
+                    >
+                        + Add
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 7 -->
+
+        <article
+            class="food-card"
+            data-category="dessert"
+            data-name="Chocolate Donuts"
+        >
+
+            <div class="food-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=700&q=80"
+                    alt="Donuts"
+                >
+
+                <button
+                    class="wishlist"
+                    data-name="Chocolate Donuts"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="food-info">
+
+                <span class="category">Dessert</span>
+
+                <h3>Chocolate Donuts</h3>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                    <span>4.8</span>
+                </div>
+
+                <p>
+                    Soft donuts covered with delicious chocolate.
+                </p>
+
+                <div class="food-bottom">
+
+                    <strong>Rs. 299</strong>
+
+                    <button
+                        class="add-btn"
+                        data-name="Chocolate Donuts"
+                        data-price="299"
+                    >
+                        + Add
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 8 -->
+
+        <article
+            class="food-card"
+            data-category="dessert"
+            data-name="Strawberry Cake"
+        >
+
+            <div class="food-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=700&q=80"
+                    alt="Strawberry Cake"
+                >
+
+                <button
+                    class="wishlist"
+                    data-name="Strawberry Cake"
+                >
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="food-info">
+
+                <span class="category">Dessert</span>
+
+                <h3>Strawberry Cake</h3>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                    <span>4.9</span>
+                </div>
+
+                <p>
+                    Soft cream cake with fresh strawberry topping.
+                </p>
+
+                <div class="food-bottom">
+
+                    <strong>Rs. 499</strong>
+
+                    <button
+                        class="add-btn"
+                        data-name="Strawberry Cake"
+                        data-price="499"
+                    >
+                        + Add
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ORDER ================= -->
+
+<section class="order-section" id="order">
+
+    <div class="section-title">
+
+        <span>YOUR ORDER</span>
+
+        <h2>Complete Your Order</h2>
+
+        <p>
+            Review your cart and enter delivery information.
+        </p>
+
+    </div>
+
+
+    <div class="order-container container">
+
+
+        <!-- CART -->
+
+        <div class="cart-box">
+
+            <div class="cart-heading">
+
+                <h3>🛒 Your Cart</h3>
+
+                <span id="cartItemsText">
+                    0 Items
+                </span>
+
+            </div>
+
+
+            <div id="cartItems">
+
+                <div class="empty-cart">
+
+                    <span>🛒</span>
+
+                    <h4>Your cart is empty</h4>
+
+                    <p>
+                        Add some delicious food first.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- COUPON -->
+
+            <div class="coupon-box">
+
+                <input
+                    type="text"
+                    id="couponInput"
+                    placeholder="Enter coupon code"
+                >
+
+                <button id="couponBtn">
+                    Apply
+                </button>
+
+            </div>
+
+            <p id="couponMessage"></p>
+
+
+            <!-- BILL -->
+
+            <div class="bill">
+
+                <div>
+                    <span>Subtotal</span>
+                    <strong id="subtotal">Rs. 0</strong>
+                </div>
+
+                <div>
+                    <span>Delivery</span>
+                    <strong id="delivery">Rs. 0</strong>
+                </div>
+
+                <div>
+                    <span>Tax (5%)</span>
+                    <strong id="tax">Rs. 0</strong>
+                </div>
+
+                <div class="discount-row">
+                    <span>Discount</span>
+                    <strong id="discount">- Rs. 0</strong>
+                </div>
+
+                <div class="total-row">
+                    <span>Total</span>
+                    <strong id="cartTotal">
+                        Rs. 0
+                    </strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- FORM -->
+
+        <div class="order-form-box">
+
+            <h3>📦 Delivery Information</h3>
+
+            <form id="orderForm">
+
+                <div class="input-row">
+
+                    <div class="input-group">
+
+                        <label>Full Name</label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Your name"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label>Phone</label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="03XX-XXXXXXX"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label>Delivery Address</label>
+
+                    <textarea
+                        id="address"
+                        placeholder="Enter complete address"
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label>Payment Method</label>
+
+                    <select id="payment" required>
+
+                        <option value="">
+                            Select Payment
+                        </option>
+
+                        <option value="Cash on Delivery">
+                            Cash on Delivery
+                        </option>
+
+                        <option value="JazzCash">
+                            JazzCash
+                        </option>
+
+                        <option value="EasyPaisa">
+                            EasyPaisa
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="place-order-btn"
+                >
+                    Place Order 🚀
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ORDER TRACKING ================= -->
+
+<section class="tracking-section">
+
+    <div class="tracking-container container">
+
+        <span>ORDER TRACKING</span>
+
+        <h2>Your Order Is In Good Hands 🚀</h2>
+
+        <div class="tracking">
+
+            <div class="track-step active">
+                <div>✓</div>
+                <span>Order Placed</span>
+            </div>
+
+            <div class="track-line"></div>
+
+            <div class="track-step">
+                <div>👨‍🍳</div>
+                <span>Preparing</span>
+            </div>
+
+            <div class="track-line"></div>
+
+            <div class="track-step">
+                <div>🛵</div>
+                <span>On The Way</span>
+            </div>
+
+            <div class="track-line"></div>
+
+            <div class="track-step">
+                <div>🏠</div>
+                <span>Delivered</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact-section" id="contact">
+
+    <div class="contact-container container">
+
+        <div class="contact-text">
+
+            <span>GET IN TOUCH</span>
+
+            <h2>
+                We Deliver
+                <strong>Happiness.</strong>
+            </h2>
+
+            <p>
+                Have a question about your order?
+                Contact our team and we will be happy to help.
+            </p>
+
+
+            <div class="contact-details">
+
+                <div>
+                    <span>📞</span>
+
+                    <div>
+                        <strong>Call Us</strong>
+                        <p>0300-1234567</p>
+                    </div>
+                </div>
+
+                <div>
+                    <span>📧</span>
+
+                    <div>
+                        <strong>Email</strong>
+                        <p>hello@foodiehub.com</p>
+                    </div>
+                </div>
+
+                <div>
+                    <span>📍</span>
+
+                    <div>
+                        <strong>Location</strong>
+                        <p>Karachi, Pakistan</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <div class="big-food-icon">
+                🍔
+            </div>
+
+            <h3>Hungry?</h3>
+
+            <p>
+                Don't wait! Order your favorite meal
+                and enjoy delicious food.
+            </p>
+
+            <a href="#menu" class="btn primary-btn">
+                Order Food
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-container container">
+
+        <div>
+
+            <a href="#home" class="logo">
+                🍔 Foodie<span>Hub</span>
+            </a>
+
+            <p>
+                Delicious food delivered to your doorstep.
+            </p>
+
+        </div>
+
+        <div class="footer-links">
+
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#order">Order</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 FoodieHub. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- ================= CART POPUP ================= -->
+
+<div class="popup" id="cartPopup">
+
+    <div class="popup-content">
+
+        <button class="close-popup" id="closePopup">
+            ×
+        </button>
+
+        <h3>🛒 Shopping Cart</h3>
+
+        <div id="popupCartItems"></div>
+
+        <div class="popup-total">
+
+            <span>Total</span>
+
+            <strong id="popupTotal">
+                Rs. 0
+            </strong>
+
+        </div>
+
+        <a
+            href="#order"
+            class="btn primary-btn checkout-btn"
+            id="checkoutBtn"
+        >
+            Go To Checkout
+        </a>
+
+    </div>
+
+</div>
+
+
+<!-- ================= PRODUCT POPUP ================= -->
+
+<div class="popup" id="productPopup">
+
+    <div class="product-popup-content">
+
+        <button
+            class="close-popup"
+            id="closeProductPopup"
+        >
+            ×
+        </button>
+
+        <img id="popupProductImage" src="" alt="Food">
+
+        <div class="product-popup-info">
+
+            <span id="popupProductCategory">
+                Food
+            </span>
+
+            <h2 id="popupProductName">
+                Food Name
+            </h2>
+
+            <div class="rating">
+                ⭐⭐⭐⭐⭐
+                <span>4.9</span>
+            </div>
+
+            <p>
+                Freshly prepared with premium ingredients.
+                Enjoy delicious food delivered directly to your door.
+            </p>
+
+            <strong id="popupProductPrice">
+                Rs. 0
+            </strong>
+
+            <button
+                id="popupAddBtn"
+                class="btn primary-btn"
+            >
+                Add To Cart 🛒
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ================= SUCCESS ================= -->
+
+<div class="success-message" id="successMessage">
+
+    <span>✓</span>
+
+    <div>
+
+        <strong>Order Placed!</strong>
+
+        <p>
+            Your food is being prepared.
+        </p>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
